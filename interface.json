@@ -104,15 +104,20 @@
                                 "default_value": "Twitter ID"
                             },
                             {
+                                "key": "v2ex",
+                                "title": "V2EX",
+                                "default_value": "V2EX ID"
+                            },
+                            {
                                 "key": "weibo",
                                 "title": "Weibo",
                                 "title_zh_cn": "微博",
                                 "default_value": "Weibo ID"
                             },
                             {
-                                "key": "v2ex",
-                                "title": "v2ex",
-                                 "default_value": "V2EX Username"
+                                "key": "disqus",
+                                "title": "disqus",
+                                 "default_value": "Disqus Short Name"
                             },
                             {
                                 "key": "github",

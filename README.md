@@ -1,5 +1,3 @@
+###Shrplife 2.0 大放异彩
 
-
-###Farbox sharplife 主题 移至 https://github.com/seitazen/sharplife 继续维护。
-
-谢谢使用！
+####Beautiful stuff for Farbox, loading...

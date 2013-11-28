@@ -1,3 +1,3 @@
-###Shrplife 2.0 大放异彩
+###Sharplife 2.0 大放异彩
 
 ####Beautiful stuff for Farbox, loading...

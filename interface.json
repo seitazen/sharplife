@@ -1,0 +1,257 @@
+[
+    {
+        "title": "Site Setup",
+        "title_zh_cn": "网站设置",
+        "groups": [
+            {
+                "title": "Site Info",
+                "title_zh_cn": "网站信息",
+                "cells": [
+                    {
+                        "parts_per_line": 2,
+                        "parts": [
+                            {
+                                "key": "title",
+                                "title": "Site Title",
+                                "title_zh_cn": "网站标题",
+                                "default_value": "My Site",
+                                "model": "text"
+                            },
+                            {
+                                "key": "domain",
+                                "title": "Domain (independent domain points CNAME to park.farbox.com)",
+                                "title_zh_cn": "域名 (独立域名CNAME需指向park.farbox.com)"
+ 
+                            }
+                        ]
+                    },
+                    {
+                        "parts_per_line": 1,
+                        "parts":[
+                            {
+                                "key": "avatar",
+                                "title": "Site Avatar URL",
+                                "title_zh_cn": "网站头像地址",
+                                "default_value": "a Image url",
+                                "model": "text"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Contents Display",
+                "title_zh_cn": "内容显示",
+                "cells":[
+                    {
+                        "parts_per_line": 3,
+                        "parts":[
+                            {
+                                "key": "posts_per_page",
+                                "title": "Posts per Page",
+                                "title_zh_cn": "每页显示日志数",
+                                "default_value": 3
+                            },
+                            {
+                                "key": "post_content_type",
+                                "title": "Post Content Type",
+                                "title_zh_cn": "正文格式",
+                                "model": "select",
+                                "default_value": "markdown",
+                                "options": [
+                                    {
+                                        "value": "markdown",
+                                        "title": "Markdown"
+                                    },
+                                    {
+                                        "value": "plain",
+                                        "title": "Plain Text with Images"
+                                    }
+                                ],
+                                "options_zh_cn": [
+                                    {
+                                        "value": "markdown",
+                                        "title": "Markdown"
+                                    },
+                                    {
+                                        "value": "plain",
+                                        "title": "普通文本+图片"
+                                    }
+                                ]
+                            },
+                            {
+                                "key": "file_path",
+                                "title": "Albums Root Path",
+                                "title_zh_cn": "相册根目录",
+                                "model": "select",
+                                "options": "root"
+                            }
+                        ]
+                    }
+                ]
+ 
+            },
+            {
+                "title":"Social Info",
+                "title_zh_cn":"社交信息",
+                "cells":[
+                    {
+                        "parts_per_line": 3,
+                        "parts":[
+                            {
+                                "key": "twitter",
+                                "title": "Twitter",
+                                "default_value": "Twitter ID"
+                            },
+                            {
+                                "key": "weibo",
+                                "title": "Weibo",
+                                "title_zh_cn": "微博",
+                                "default_value": "Weibo ID"
+                            },
+                            {
+                                "key": "v2ex",
+                                "title": "v2ex",
+                                 "default_value": "V2EX Username"
+                            },
+                            {
+                                "key": "github",
+                                "title": "Github",
+                                "default_value": "Github ID"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Advanced Setup",
+        "title_zh_cn": "高级设置",
+        "groups":[
+            {
+                "title":"Data Permission",
+                "title_zh_cn":"数据权限",
+                "cells":[
+                    {
+                        "parts_per_line": 1,
+                        "parts":[
+                            {
+                                "key": "comment",
+                                "title": "Comments Allowed (if not checked, visitors can't comment on your posts or images)",
+                                "title_zh_cn": "允许评论（如不勾选，则访客无法评论你的文章、图片）",
+                                "model":"check",
+                                "default_value": "yes"
+                            },
+                            {
+                                "key": "open_st",
+                                "title": "Open Statistics (caution, if opened, anyone can visit statistics data of your site)",
+                                "title_zh_cn": "开放统计数据（请慎重，任何人都可以访问网站的访问数等统计数据）",
+                                "model":"check"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "URLs Forbidden",
+                "title_zh_cn":"URLs禁止访问",
+                "cells":[
+                    {
+                        "parts_per_line": 1,
+                        "parts":[
+                            {
+                                "key": "hidden_urls",
+                                "title": "URL Paths to be forbidden, one record one line, `the_path` or `the_path/*`",
+                                "title_zh_cn": "如果访问路径为以下所示，将禁止访问，每行一条记录，`the_path`或`the_path/*`",
+                                "model":"textarea",
+                                "is_list": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Passwords for Visitors",
+                "title_zh_cn":"访问密码",
+                "cells":[
+                    {
+                        "parts_per_line": 1,
+                        "parts":[
+                            {
+                                "key": "users",
+                                "title": "Visitors must input the username and password to access, format is 'username@password', one record one line",
+                                "title_zh_cn": "访客须输入用户名、密码才能访问，格式为'username@password', 每行一条记录 ",
+                                "model":"textarea",
+                                "is_list": true
+                            },
+                            {
+                                "key": "password_keep_long",
+                                "title": "Remember the status of visitor's login for 180 days.",
+                                "title_zh_cn":"记住访客的登录状态，最长180天。",
+                                "model": "check"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Multi Domains Binding",
+                "title_zh_cn":"多域名绑定",
+                "cells":[
+                    {
+                        "parts_per_line": 1,
+                        "parts":[
+                            {
+                                "key": "domains",
+                                "title": "one line one domain which needed to bind, no more than 10 lines.",
+                                "title_zh_cn": "每行一条需绑定的域名，最多不超过10条",
+                                "model":"textarea",
+                                "is_list": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Insert Scripts",
+                "title_zh_cn":"插入脚本",
+                "cells":[
+                    {
+                        "parts_per_line": 1,
+                        "parts":[
+                            {
+                                "key": "scripts_per_page",
+                                "title": "Insert following code into every page.",
+                                "title_zh_cn": "将下面的代码插入到每个页面中",
+                                "model":"textarea"
+                            },
+                            {
+                                "key": "scripts_for_doc",
+                                "title": "Insert following code into Doc(post/image) page.",
+                                "title_zh_cn": "将下面的代码插入到文档(日志或图片)详细页中",
+                                "model":"textarea"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Site Description",
+                "title_zh_cn":"网站描述",
+                "cells":[
+                    {
+                        "parts_per_line": 1,
+                        "parts":[
+                            {
+                                "key": "raw_content",
+                                "model":"textarea"
+                            }
+                        ]
+                    }
+                ]
+            }
+ 
+        ]
+    }
+]

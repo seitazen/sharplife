@@ -1,0 +1,19 @@
+
+
+{% extends "base.html" %}
+{% block title %}
+{% if request.path == '/links' %}
+        Links Friends
+    {% elif request.path == '/about' %}
+        About Me
+    {% else %}
+        {{ post.title }}
+    {% endif %}
+{% endblock%}
+
+{% block content %}
+<div class = "autopagerize_page_element" >
+<div class="content">
+<div style="padding-left:15%">{{ post.content }}</div>
+</div></div>
+{% endblock %}

@@ -390,6 +390,7 @@ a.withback:hover{
     }
     
     .tags {
+      float: left;
         padding-bottom: 15px;
         font-size: 13px;
     }
@@ -466,10 +467,7 @@ a.withback:hover{
         float: right;
      }
      
-     .datenotes {
-         float: left;
-         font-size: 12px;
-     }
+    
      
      .like-reblog-buttons {
          float: right;

@@ -20,17 +20,7 @@
 {% endfor %}
 </ul>
 
-<div class="pagination">
-<ul class="clearfix">
-    {% if paginator.has_previous %}
-    <li class="pagbuttons" id="newer"><a class="withback" href="{{ paginator.previous_page_url }}">更新的 »</a></li>
-    {% endif %}
-    {% if paginator.has_next %}
-    <li class="pagbuttons" id="older"><a class="withback" href="{{ paginator.next_page_url}}">« 以前的</a></li>
-    {% endif %}
-    
-</ul>
-</div>
+{% include 'include/paginator.html' %}
 
 </div> <!-- Content ends-->
 

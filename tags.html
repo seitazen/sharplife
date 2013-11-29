@@ -1,44 +1,24 @@
 {% extends 'base.html' %}
-{% block title %}{{ tags | join(' ') }}{% endblock %}
+{% block title %}{{ site.title }}: {{ tags | join(' ') }}{% endblock %}
 
 {% block content %}
-    <!-- Content -->
+ <!-- Content -->
 <div class = "autopagerize_page_element" >
 <div class="content">
+<h3>Posts in {{ tags | join(' ') }}</h3>
+<ul class='all-item'>
 
+{% for post in posts %}
+<li class="listing-item">
+                <span class="fr">{{ post.date | date("%d %b %Y") }}</span>
+<a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+</li>
+{% endfor %}
+</ul>
 
-    <div class="post">
-    <h2>
-            <a href="{{post.url}}">{{post.title}}</a>
-        </h2>
-       
-
-        <div class="post-content">
-                {{ post.content | lazy_text }}
-            </div>
-
-        
-        <div class="post-footer">
-        <div class="tags">
-            {% for tag in post.tags %}
-                    <li><a href="/tags/{{ tag }}">#{{ tag }}</a></li>
-                    {% endfor %}
-        </div>
-        <div class="meta">
-            <div class="datenotes">
-                <i class="fa fa-clock-o"></i> {{ post.date | date('%Y-%m-%d') }}
-            </div>
-            <div class="like-reblog-buttons">
-                <div class="reblog-button"><a href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&title=',e(d.title),'&appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"><i class="fa fa-plus"></i></a></div>
-            </div>
-        </div>
-        </div>
-   
+</div>
 </div>
 
+{% include 'include/paginator.html' %}
 
-
-{% include 'include/comments.html'%}
-
-</div> <!-- Content ends-->
 {% endblock %}

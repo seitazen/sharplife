@@ -9,13 +9,14 @@
 
 
     <div class="post">
-    <h2>
-            <a href="{{post.url}}">{{post.title}}</a>
-        </h2>
+    
+    
+            <a class="post-title" href="{{post.url}}">{{post.title}}</a>
        
+      <span class="fr post-date">{{ post.date | date('%d %b %Y') }}</span> 
 
         <div class="post-content">
-                {{ post.content | lazy_text }}
+                {{ post.content }}
             </div>
 
         
@@ -27,19 +28,24 @@
         </div>
         <div class="meta">
             <div class="datenotes">
-                <i class="fa fa-clock-o"></i> {{ post.date | date('%Y-%m-%d') }}&nbsp;
-                 <i class="fa fa-comment-o"></i> <a href="{{post.url}}#disqus_thread">Link</a>
+                
+                 
             </div>
             <div class="like-reblog-buttons">
                 <div class="reblog-button"><a href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&title=',e(d.title),'&appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));"><i class="fa fa-plus"></i></a></div>
             </div>
         </div>
+
+          <div class="donate">
+        如果你喜欢这篇文章，欢迎 <a href="https://me.alipay.com/chricy" target="_blank" style="text-decoration:underline">捐赠作者</a> 以示鼓励。
+    </div>
         </div>
+
+  
    
 </div>
 
 
-    
 
 {% include 'include/comments.html'%}
 

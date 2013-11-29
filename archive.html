@@ -6,11 +6,11 @@
 <div class="content">
 <ul class="list_with_title">
     {% for month, posts in archive %}
-        <li class="listing_title">{{ month }}</li>
-        <ul class='listing'>
+        <h3 class="listing_title">{{ month }}</h3>
+        <ul class='all-item'>
         {% for post in posts %}
             <li class="listing-item">
-                <span class="date">{{ post.date | date("%Y-%m-%d") }}</span>
+                <span class="fr">{{ post.date | date("%d %b %Y") }}</span>
                 <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
             </li>
         {% endfor %}

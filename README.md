@@ -24,7 +24,7 @@ url: sample.md
 <p style="text-align">WOW! it's amazing!</p>
 ```
 
-然后即可通过 domain.com/sample.md 访问
+然后即可通过 domain.com/sample.md 访问，新建 about.md 不用修改 nav，会自动显示。
 
 想在菜单显示修改 include/nav.html 即可
 

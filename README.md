@@ -2,7 +2,7 @@
 
 ####Beautiful stuff for Farbox, [Donate](https://me.alipay.com/chricy) may be good:)...
 
-####使用
+####使用(懒得用 interface.json 了)
 
 git clone 或者直接下载后放在你的 template 目录下即可
 

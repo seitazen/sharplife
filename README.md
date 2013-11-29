@@ -12,5 +12,23 @@ git clone 或者直接下载后放在你的 template 目录下即可
 
 添加统计代码可在 include/footer.html 添加，或到 domain.com/admin 后台添加
 
-*WTFPL License*
+####添加一个页面(只是举个栗子)
+
+网站根目录下新建个 page.md
+内容为
+```html
+title: Sample Page
+url: sample.md
+
+<h1 style="text-align">Try it out</h1>
+<p style="text-align">WOW! it's amazing!</p>
+```
+
+然后即可通过 domain.com/sample.md 访问
+
+想在菜单显示修改 include/nav.html 即可
+
+P.S. 页面请尽量用 html 书写避免错误。
+
+**WTFPL License**
 

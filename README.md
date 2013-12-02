@@ -14,7 +14,7 @@ git clone 或者直接下载后放在你的 template 目录下即可
 
 ####添加一个页面(只是举个栗子)
 
-网站根目录下新建个 page.md
+网站根目录下新建个 sample.md
 内容为
 ```html
 title: Sample Page

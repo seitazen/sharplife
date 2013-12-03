@@ -20,8 +20,8 @@ git clone 或者直接下载后放在你的 template 目录下即可
 title: Sample Page
 url: sample.md
 
-<h1 style="text-align">Try it out</h1>
-<p style="text-align">WOW! it's amazing!</p>
+<h1 style="text-align:center">Try it out</h1>
+<p style="text-align:center">WOW! it's amazing!</p>
 ```
 
 然后即可通过 domain.com/sample.md 访问，新建 about.md 不用修改 nav，会自动显示。

@@ -1,4 +1,4 @@
-###Sharplife 2.0 大放异彩
+###Sharplife 2.0 大放异彩 [旧版本](https://github.com/enirehtac/sharplife)
 
 ####Beautiful stuff for Farbox, [Donate](https://me.alipay.com/chricy) may be good:)...
 

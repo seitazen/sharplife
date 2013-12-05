@@ -30,5 +30,5 @@ url: sample.md
 
 P.S. 页面请尽量用 html 书写避免错误。
 
-**WTFPL License**
+**WTFPL License( 你他妈的想干嘛就干嘛公共许可证 )**
 
